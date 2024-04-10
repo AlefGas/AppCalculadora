@@ -21,6 +21,14 @@ class MainActivity : AppCompatActivity() {
         botaoCalculadora.setOnClickListener {
             IrParaSegundaTela()
         }
+        fun IrParaTelaTelefone(){
+            val telaTelefone = Intent(this,TelefoneActivity::class.java)
+            startActivity(telaTelefone)
+        }
+        val botaoTelefone: Button = findViewById(R.id.contaTelefonica)
+        botaoTelefone.setOnClickListener {
+            IrParaTelaTelefone()
+        }
 
         val meuBotao: Button = findViewById(R.id.aluno)
         meuBotao.setOnClickListener {

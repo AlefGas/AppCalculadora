@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/assinaturaTextView"
+        android:layout_width="149dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="200dp"
+        android:text="Assinatura:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chamadaLocalTextView"
+        android:layout_width="147dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="22dp"
+        android:text="chamada Local:"
+        app:layout_constraintBottom_toTopOf="@+id/chamadaCelularTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chamadaCelularTextView"
+        android:layout_width="153dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="403dp"
+        android:text="Chamada ao celular:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/chamadaLocalTextView"
+        app:layout_constraintStart_toStartOf="@+id/chamadaLocalTextView"
+        app:layout_constraintTop_toBottomOf="@+id/chamadaLocalTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
