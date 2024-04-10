@@ -2,6 +2,7 @@ package com.example.appcalculadorarm99487
 
 import android.os.Bundle
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.RadioButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +19,11 @@ class CalculadoraActivity : AppCompatActivity() {
         val btnSubtracao: RadioButton =findViewById(R.id.Btn_subtracao)
         val btnMultiplicacao: RadioButton =findViewById(R.id.Btn_multiplicacao)
         val btnDivisao: RadioButton =findViewById(R.id.Btn_divisao)
+        val BtnVoltar: ImageButton =findViewById(R.id.ButtonReturn)
+
+        BtnVoltar.setOnClickListener(){
+            finish()
+        }
 
         btnSoma.setOnClickListener {
             val valor1PlainText = valor1EditText.text.toString()
