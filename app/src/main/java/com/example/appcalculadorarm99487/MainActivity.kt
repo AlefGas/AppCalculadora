@@ -12,6 +12,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        fun IrParaSegundaTela(){
+            val segundaTela = Intent(this,CalculadoraActivity::class.java)
+            startActivity(segundaTela)
+        }
+
+        val botaoCalculadora: Button = findViewById(R.id.calculadora)
+        botaoCalculadora.setOnClickListener {
+            IrParaSegundaTela()
+        }
+
         val meuBotao: Button = findViewById(R.id.aluno)
         meuBotao.setOnClickListener {
             val builder = AlertDialog.Builder(this)
@@ -23,12 +33,8 @@ class MainActivity : AppCompatActivity() {
             dialog.show()
         }
 
-        val botaoCalculadora: Button = findViewById(R.id.calculadora)
-        botaoCalculadora.setOnClickListener {
 
-        }
-        val intent = Intent(this, CalculadoraActivity::class.java)
-        startActivity(intent)
+
     }
 
 }
