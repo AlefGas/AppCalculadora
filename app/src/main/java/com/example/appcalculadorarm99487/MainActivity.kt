@@ -1,6 +1,7 @@
 package com.example.appcalculadorarm99487
 
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -21,6 +22,13 @@ class MainActivity : AppCompatActivity() {
             val dialog: AlertDialog = builder.create()
             dialog.show()
         }
+
+        val botaoCalculadora: Button = findViewById(R.id.calculadora)
+        botaoCalculadora.setOnClickListener {
+
+        }
+        val intent = Intent(this, CalculadoraActivity::class.java)
+        startActivity(intent)
     }
 
 }
