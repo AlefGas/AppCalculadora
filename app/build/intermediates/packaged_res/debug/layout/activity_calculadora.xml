@@ -79,4 +79,14 @@
             android:layout_height="wrap_content"
             android:text="Divisão" />
     </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/ButtonReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="352dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/valor1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
 </androidx.constraintlayout.widget.ConstraintLayout>

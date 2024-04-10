@@ -32,6 +32,7 @@
         </activity>
         <activity android:name="com.example.appcalculadorarm99487.CalculadoraActivity" />
         <activity android:name="com.example.appcalculadorarm99487.TelefoneActivity" />
+        <activity android:name="com.example.appcalculadorarm99487.ResultadoActivity" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
