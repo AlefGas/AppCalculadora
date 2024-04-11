@@ -46,6 +46,7 @@
         android:layout_marginBottom="131dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/valor2">
 
@@ -59,24 +60,28 @@
             android:id="@+id/btn_soma"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/rosa"
             android:text="Soma" />
 
         <RadioButton
             android:id="@+id/Btn_subtracao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/rosa"
             android:text="subtração" />
 
         <RadioButton
             android:id="@+id/Btn_multiplicacao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/rosa"
             android:text="Multiplicação" />
 
         <RadioButton
             android:id="@+id/Btn_divisao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/rosa"
             android:text="Divisão" />
     </RadioGroup>
 

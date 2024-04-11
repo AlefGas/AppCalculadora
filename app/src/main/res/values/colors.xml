@@ -2,4 +2,5 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="rosa_claro">#ED145B</color>
+    <color name="rosa">#DE3163</color>
 </resources>
